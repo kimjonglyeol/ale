@@ -15,6 +15,10 @@ fig = plt.figure(figsize=(10,4))
 sns.histplot(data=df, x='호선', hue='조사일자', multiple='stack')
 st.pyplot(fig)
 
+fig2 = plt.figure(figsize=(10,4))
 sns.kdeplot(data=df, x='호선')
+st.pyplot(fig2)
 
+fig3 = plt.figure(figsize=(10,4))
 sns.kdeplot(data=df, x='호선', hue='조사일자', multiple='stack')
+st.pyplot(fig3)
