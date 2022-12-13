@@ -18,3 +18,8 @@ st.pyplot(fig)
 fig = plt.figure(figsize=(10,4))
 sns.histplot(data=df, x='발생건수(건)', bins=10)
 st.pyplot(fig)
+
+
+fig = plt.figure(figsize=(10,4))
+sns.kdeplot(data=df, x='발생건수(건)')
+st.pyplot(fig)
