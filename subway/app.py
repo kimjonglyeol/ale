@@ -34,3 +34,6 @@ labels = ['A', 'B', 'C']
 fig5 = plt.figure(figsize=(10, 4))
 plt.pie(x=x, labels=labels, autopct='%.1f%%')
 st.pyplot(fig5)
+
+fig = px.histogram(df, x='호선', y='조사일자',title='12월 판매량' )
+st.plotly_chart(fig)
