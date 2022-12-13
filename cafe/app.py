@@ -21,3 +21,7 @@ for file_name in file_names:
 
 total.reset_index(inplace=True, drop=True)
 st.write(total)
+
+fig = plt.figure(figsize=(10,4))
+sns.histplot(data=df, x='영업상태명')
+st.pyplot(fig)
