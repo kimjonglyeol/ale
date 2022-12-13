@@ -21,3 +21,7 @@ st.write(titanic)
 fig = plt.figure(figsize=(10,4))
 sns.histplot(data=titanic, x='age')
 st.pyplot(fig)
+
+fig = plt.figure(figsize=(8,4))
+sns.histplot(data=titanic, x='age', hue='alive', multiple='stack')
+st.pyplot(fig)
