@@ -12,5 +12,5 @@ df = pd.read_csv('./subway/subway.csv', encoding='CP949')
 st.write(df)
 
 fig = plt.figure(figsize=(10,4))
-sns.histplot(data=df, x='조사일자', bins=10)
+sns.histplot(data=df, x='호선', bins=10)
 st.pyplot(fig)
