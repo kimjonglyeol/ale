@@ -12,7 +12,7 @@ st.write(df)
 
 from glob import glob
 
-file_names = glob('./cafe/*.csv')
+file_names = glob('./cafe/cafe.csv')
 total = pd.DataFrame()
 
 for file_name in file_names:
