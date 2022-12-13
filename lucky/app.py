@@ -12,7 +12,7 @@ columns = st.columns(4)    # 화면을 열로 나누어서 배치
 # 가로 4개의 열
 for idx, col in enumerate(columns):
     for idx2 in range(4):
-        col.text_input(f"조 추첨 대상 {idx + 1 + idx2 * 2}", key=idx)
+        col.text_input(f"조 추첨 대상 {idx + 1 + idx2 * 4}", key=f"{idx + 1 + idx2 * 4}")
 # 13명이 소속될 조 이름을 넣을 위치
 
 # <추첨 버튼>
