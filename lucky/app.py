@@ -50,7 +50,7 @@ g_data = ss2[g_idx]
 n_rd = np.random.choice(n_data, len(n_data), replace=False)
 # st.write(n_rd)
 g_rd = np.random.choice(g_data, len(g_data), replace=False)
-<<<<<<< HEAD
+
 # st.write(g_rd)
 
 df = pd.DataFrame({
