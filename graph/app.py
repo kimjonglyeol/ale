@@ -18,3 +18,6 @@ titanic = sns.load_dataset('titanic')
 st.write(titanic)
 # st.table(titanic)
 
+fig = plt.figure(figsize=(10,4))
+sns.histplot(data=titanic, x='age')
+st.pyplot(fig)
