@@ -17,6 +17,14 @@ for idx, col in enumerate(columns):
     for idx2 in range(4):
         # 키가 겹치면 안됨
         col.text_input(f"조 추첨 대상 {idx + 1 + idx2 * 4}", key=f"n{idx + 1 + idx2 * 4}")
+
+columns2 = tabs[1].columns(4)    # 화면을 열로 나누어서 배치
+# 가로 4개의 열
+# enumerate : index, value 묶
+for idx, col in enumerate(columns2):
+    for idx2 in range(4):
+        # 키가 겹치면 안됨
+        col.text_input(f"조 추첨 대상 {idx + 1 + idx2 * 4}", key=f"g{idx + 1 + idx2 * 4}")        
 # 13명이 소속될 조 이름을 넣을 위치
 st.write(st.session_state)
 # <추첨 버튼>
