@@ -17,6 +17,7 @@ st.pyplot(fig)
 
 fig2 = plt.figure(figsize=(10,4))
 sns.kdeplot(data=df, x='호선')
+sns.rugplot(data=df, x='호선')
 st.pyplot(fig2)
 
 fig3 = plt.figure(figsize=(10,4))
