@@ -30,6 +30,6 @@ st.pyplot(fig4)
 
 x = [10, 60, 30] # 범주형 데이터별 파이 그래프의 비율
 labels = ['A', 'B', 'C']
-fig5 = plt.figure(figsize=(8, 4))
+fig5 = plt.figure(figsize=(10, 4))
 plt.pie(x=x, labels=labels, autopct='%.1f%%')
 st.pyplot(fig5)
