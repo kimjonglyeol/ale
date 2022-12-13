@@ -12,9 +12,9 @@ st.write(
 df = pd.read_csv('./subway/subway.csv', encoding='CP949')
 st.write(df)
 
-fig = px.figure(figsize=(10,4))
+fig = plt.figure(figsize=(10,4))
 sns.histplot(data=df, x='호선', hue='조사일자', multiple='stack')
-st.plotly(fig)
+st.pyplot(fig)
 
 fig2 = plt.figure(figsize=(10,4))
 sns.kdeplot(data=df, x='호선')
