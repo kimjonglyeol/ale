@@ -35,5 +35,5 @@ fig5 = plt.figure(figsize=(10, 4))
 plt.pie(x=x, labels=labels, autopct='%.1f%%')
 st.pyplot(fig5)
 
-fig = px.histogram(df, x='호선',title='12월 판매량' )
+fig = px.histogram(df, x='호선',title='호선별 이용자수' )
 st.plotly_chart(fig)
