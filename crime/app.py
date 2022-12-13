@@ -12,7 +12,7 @@ temp = pd.read_csv("./crime/crime.csv", sep="|", encoding="cp949")          #파
 
 from glob import glob          #csv파일 읽기 위해 glob사용
 
-file_names = glob("data/*.csv")
+file_names = glob("crime/*.csv")
 
           #csv파일명 목록 불러오기
 
