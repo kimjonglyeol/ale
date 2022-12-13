@@ -27,3 +27,6 @@ st.pyplot(fig3)
 fig4 = plt.figure(figsize=(10,4))
 sns.displot(data=df, x='호선')
 st.pyplot(fig4)
+
+int('8시30분')
+st.write('8시30분')
