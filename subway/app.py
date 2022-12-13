@@ -28,13 +28,8 @@ fig4 = plt.figure(figsize=(10,4))
 sns.displot(data=df, x='호선')
 st.pyplot(fig4)
 
-fig5 = plt.figure(figsize=(10,4))
-sns.kdeplot(data=df, x='호선')
-sns.rugplot(data=df, x='호선')
-st.pyplot(fig5)
-
 x = [10, 60, 30] # 범주형 데이터별 파이 그래프의 비율
 labels = ['A', 'B', 'C']
-fig6 = plt.figure(figsize=(8, 4))
+fig5 = plt.figure(figsize=(8, 4))
 plt.pie(x=x, labels=labels, autopct='%.1f%%')
-st.pyplot(fig6)
+st.pyplot(fig5)
