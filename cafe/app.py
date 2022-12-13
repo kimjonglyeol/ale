@@ -19,5 +19,5 @@ for file_name in file_names:
    temp = pd.read.csv(file_name, sep='|', encoding='utf=--8')
    total = pd.concat([total, temp])
 
- total.reset_index(inplace=True, drop=True)
+total.reset_index(inplace=True, drop=True)
 st.write(total)
