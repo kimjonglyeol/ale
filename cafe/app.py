@@ -16,7 +16,7 @@ file_names = glob('./cafe/cafe.csv')
 total = pd.DataFrame()
 
 for file_name in file_names:
-   temp = pd.read.csv(file_name, sep='|', encoding='utf=--8')
+   temp = pd.read_csv(file_name, sep='|', encoding='utf=--8')
    total = pd.concat([total, temp])
 
 total.reset_index(inplace=True, drop=True)
