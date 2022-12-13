@@ -20,4 +20,4 @@ for file_name in file_names:
    total = pd.concat([total, temp])
 
  total.reset_index(inplace=True, drop=True)
- total  
+st.write(total)
