@@ -5,21 +5,21 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-st.write(
-   "https://www.data.go.kr/data/15084748/fileData.do"
-)
-df = pd.read_csv('./crime/crime.csv', encoding='CP949')
-st.write(df)
-
-fig = plt.figure(figsize=(10,4))
-sns.histplot(data=df, x='발생건수(건)')
-st.pyplot(fig)
-
-fig = plt.figure(figsize=(10,4))
-sns.histplot(data=df, x='발생건수(건)', bins=10)
-st.pyplot(fig)
 
 
-fig = plt.figure(figsize=(10,4))
-sns.kdeplot(data=df, x='발생건수(건)')
-st.pyplot(fig)
+temp = pd.read_csv("./crime/crime.csv", sep="|", encoding="sp949")          #파일 불러오기
+
+from glob import glob          #csv파일 읽기 위해 glob사용
+
+file_names = glob("./crime/crime.csv")          #csv파일명 목록 불러오기
+
+total = pd.DataFrame()
+
+ for file_name in file_names:          #모든 csv파일 내용 병합하기
+
+         temp = pd.read_csv(""./crime/crime.csv", sep="|", encoding="CP949"
+
+         total = pd.concat([total, temp])
+
+data = total[['절도', '사기', '폭', '도로교통법(음주운전)']]          #필요한 columns 선택
+
