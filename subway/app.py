@@ -37,3 +37,6 @@ st.pyplot(fig5)
 
 fig = px.histogram(df, x='호선',title='호선별 이용자수' )
 st.plotly_chart(fig)
+
+fig = px.bar(df, x='year', y='rating', color='index', barmode='group', height = 500 , width = 1000)
+fig.show()
