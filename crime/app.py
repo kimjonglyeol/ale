@@ -8,11 +8,11 @@ import seaborn as sns
 
 
 
-temp = pd.read_csv("./crime/crime.csv", sep="|", encoding="sp949")          #파일 불러오기
+temp = pd.read_csv("./crime/crime.csv", sep="|", encoding="cp949")          #파일 불러오기
 
 from glob import glob          #csv파일 읽기 위해 glob사용
 
-file_names = glob(temp)          #csv파일명 목록 불러오기
+file_names = glob("./crime/crime.csv")          #csv파일명 목록 불러오기
 
 total = pd.DataFrame()
 
