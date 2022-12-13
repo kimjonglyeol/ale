@@ -27,6 +27,8 @@ for idx, col in enumerate(columns2):
         # 키가 겹치면 안됨
         col.text_input(f"조 목록 {idx + 1 + idx2 * 4}", key=f"g{idx + 1 + idx2 * 4}")  
 
+     
+
 
 # 13명이 소속될 조 이름을 넣을 위치
 # st.write(st.session_state)
@@ -48,12 +50,18 @@ g_data = ss2[g_idx]
 n_rd = np.random.choice(n_data, len(n_data), replace=False)
 # st.write(n_rd)
 g_rd = np.random.choice(g_data, len(g_data), replace=False)
+<<<<<<< HEAD
 # st.write(g_rd)
 
 df = pd.DataFrame({
     "추첨 대상자 이름": n_rd,
     "조 이름": g_rd,
 })
+# st.balloons()
+st.snow()
+
 st.write(df)
+
 # <추첨 버튼>
 # 13개의 짝을 지어서 표시해줄 그래픽
+ 
