@@ -35,13 +35,19 @@ ss = pd.Series(st.session_state)
 # st.write(ss)
 # ss2 = ss[ss != ""]
 ss2 = ss[ss.ne("")]
-st.write(ss2)
+# st.write(ss2)
+
 n_idx = ss2.index.str.contains('n')
 n_data = ss2[n_idx]
-st.write(n_data)
+# st.write(n_data)
 
 g_idx = ss2.index.str.contains('g')
 g_data = ss2[g_idx]
-st.write(g_data)
+# st.write(g_data)
+
+n_rd = np.random.choice(n_data, len(n_data), replace=False)
+st.write(n_rd)
+g_rd = np.random.choice(g_data, len(g_data), replace=False)
+st.write(g_rd)
 # <추첨 버튼>
 # 13개의 짝을 지어서 표시해줄 그래픽
