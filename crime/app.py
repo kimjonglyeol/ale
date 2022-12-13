@@ -12,13 +12,13 @@ temp = pd.read_csv("./crime/crime.csv", sep="|", encoding="sp949")          #파
 
 from glob import glob          #csv파일 읽기 위해 glob사용
 
-file_names = glob("./crime/crime.csv")          #csv파일명 목록 불러오기
+file_names = glob(temp)          #csv파일명 목록 불러오기
 
 total = pd.DataFrame()
 
  for file_name in file_names:          #모든 csv파일 내용 병합하기
 
-         temp = pd.read_csv(file_names, sep="|", encoding="CP949")
+         temp = pd.read_csv(file_name, sep="|", encoding="CP949")
 
          total = pd.concat([total, temp])
 
