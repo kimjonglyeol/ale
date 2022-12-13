@@ -8,6 +8,7 @@ st.header("여러분의 참여를 환영합니다")
 
 
 st.image("./lucky/ad.jpg")
+st.image("https://i.imgur.com/hsOZMGW.jpeg")
 # 추첨 대상인 13명의 이름을 넣을 수 있는 text.input
 # 3 x 4 (row, col)
 # 열을 배치하는 메소드
