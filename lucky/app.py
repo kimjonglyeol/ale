@@ -1,16 +1,11 @@
 # streamlit 라이브러리 호출
 import streamlit as st
+import numpy as np
 
+st.title("조 추첨 페이지")
 
-st.write(
-    """
-    # 제 첫 웹페이지닙니다.
-    ## 부족하지만
-    * 원소주 땡긴다.
-    """
-)    
+# 추첨 대상인 13명의 이름을 넣을 수 있는 text.input
+# 13명이 소속될 조 이름을 넣을 위치
 
-st.image(
-
-    "https://pixabay.com/photos/soju-shot-glass-drink-glass-6523540/"
-)
+# <추첨 버튼>
+# 13개의 짝을 지어서 표시해줄 그래픽
