@@ -23,6 +23,7 @@ fig3 = plt.figure(figsize=(10,4))
 sns.kdeplot(data=df, x='호선', hue='조사일자', multiple='stack')
 st.pyplot(fig3)
 
+int('8시30분')
 fig4 = plt.figure(figsize=(10,4))
 sns.displot(data=df, x='8시30분')
 st.pyplot(fig4)
