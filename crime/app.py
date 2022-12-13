@@ -18,7 +18,7 @@ total = pd.DataFrame()
 
  for file_name in file_names:          #모든 csv파일 내용 병합하기
 
-         temp = pd.read_csv(file_name, sep="|", encoding="CP949")
+         temp = pd.read_csv(file_names, sep="|", encoding="CP949")
 
          total = pd.concat([total, temp])
 
