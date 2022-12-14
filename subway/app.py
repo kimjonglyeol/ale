@@ -6,6 +6,11 @@ import seaborn as sns
 import plotly.express as px
 
 st.title("지하철")
+
+st.image(
+        'https://imgnews.pstatic.net/image/421/2022/12/03/0006498364_001_20221203063104186.jpg?type=w647'
+
+)
 # st.write(
 #    "https://www.naver.com/"
 # )
