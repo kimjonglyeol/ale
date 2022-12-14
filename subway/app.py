@@ -46,4 +46,4 @@ fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfun
 zp = fp.fillna(0)
 zp
 
-
+sns.heatmap(data=zp)
