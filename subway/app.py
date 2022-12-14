@@ -46,5 +46,6 @@ fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfun
 zp = fp.fillna(0)
 zp
 
+zp = plt.figure(figsize=(10,4))
 sns.heatmap(data=zp)
 st.pyplot(zp)
