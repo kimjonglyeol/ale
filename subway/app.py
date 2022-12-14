@@ -43,7 +43,7 @@ st.write(df)
 # plt.pie(x=x, labels=labels, autopct='%.1f%%')
 # st.pyplot(fig5)
 
-tab1, tab2 = st.tabs(['호선별 이용자수','5시30분 이용자수'])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(['호선별 이용자수','5시30분 이용자수','6시30분 이용자수','7시30분 이용자수','8시30분 이용자수'])
 fig = px.histogram(df, x='호선')
 tab1.plotly_chart(fig)
 
@@ -56,5 +56,12 @@ zp = fp.fillna(0)
 fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
 tab2.plotly_chart(fig7)
 
+fig8 = px.density_heatmap(df, x='호선', y="6시30분", marginal_x="rug", marginal_y="histogram")
+tab3.plotly_chart(fig8)
 
+fig9 = px.density_heatmap(df, x='호선', y="7시30분", marginal_x="rug", marginal_y="histogram")
+tab4.plotly_chart(fig9)
+
+fig0 = px.density_heatmap(df, x='호선', y="8시30분", marginal_x="rug", marginal_y="histogram")
+tab5.plotly_chart(fig0)
 
