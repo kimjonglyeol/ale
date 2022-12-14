@@ -47,3 +47,4 @@ zp = fp.fillna(0)
 zp
 
 sns.heatmap(data=zp)
+st.pyplot(zp)
