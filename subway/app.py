@@ -8,7 +8,7 @@ import plotly.express as px
 st.title("지하철")
 # st.write(
 #    "https://www.naver.com/"
-)
+# )
 df = pd.read_csv('./subway/subway.csv', encoding='CP949')
 st.write(df)
 
