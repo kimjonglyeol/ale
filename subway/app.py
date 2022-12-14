@@ -49,6 +49,6 @@ zp
 sns.heatmap(data=zp)
 
 # df7 = px.data.df()
-fig7 = px.density_heatmap(zp, x='상선', y="하선", marginal_x="rug", marginal_y="histogram")
+fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
 st.plotly_chart(fig7)
 
