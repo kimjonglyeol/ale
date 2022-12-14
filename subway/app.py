@@ -45,7 +45,7 @@ st.write(df)
 
 tab1, tab2, tab3, tab4, tab5 = st.tabs(['호선별 이용자수','5시30분 이용자수','6시30분 이용자수','7시30분 이용자수','8시30분 이용자수'])
 fig = px.histogram(df, x='호선')
-tab1.plotly_chart(fig)
+sidebar.tab1.plotly_chart(fig)
 
 df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
@@ -53,14 +53,14 @@ zp = fp.fillna(0)
 # zp
 # df7 = px.data.df()
 fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
-tab2.plotly_chart(fig7)
+sidebar.tab2.plotly_chart(fig7)
 
 fig8 = px.density_heatmap(df, x='호선', y="6시30분", marginal_x="rug", marginal_y="histogram")
-tab3.plotly_chart(fig8)
+sidebar.tab3.plotly_chart(fig8)
 
 fig9 = px.density_heatmap(df, x='호선', y="7시30분", marginal_x="rug", marginal_y="histogram")
-tab4.plotly_chart(fig9)
+sidebar.tab4.plotly_chart(fig9)
 
 fig0 = px.density_heatmap(df, x='호선', y="8시30분", marginal_x="rug", marginal_y="histogram")
-tab5.plotly_chart(fig0)
+sidebar.tab5.plotly_chart(fig0)
 
