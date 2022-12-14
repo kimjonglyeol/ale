@@ -49,9 +49,7 @@ st.plotly_chart(fig)
 df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 zp = fp.fillna(0)
-zp
-
-sns.heatmap(data=zp)
+# zp
 
 # df7 = px.data.df()
 fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
