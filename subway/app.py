@@ -41,6 +41,8 @@ st.pyplot(fig5)
 fig = px.histogram(df, x='호선',title='호선별 이용자수' )
 st.plotly_chart(fig)
 
+df.replace(np.NaN, 0)
 df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 fp
+
