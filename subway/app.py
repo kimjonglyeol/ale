@@ -50,5 +50,6 @@ sns.heatmap(data=zp)
 
 import plotly.express as px
 df7 = px.data.zp()
-fig = px.density_heatmap(df7, x="구분", y="호선", marginal_x="rug", marginal_y="histogram")
-fig.show()
+fig7 = px.density_heatmap(df7, x="구분", y="호선", marginal_x="rug", marginal_y="histogram")
+fig7.show()
+
