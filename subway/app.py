@@ -43,7 +43,7 @@ st.write(df)
 # plt.pie(x=x, labels=labels, autopct='%.1f%%')
 # st.pyplot(fig5)
 
-tabs = st.tabs(['참가자'])
+tabs = st.tabs(['호선별 이용자수'])
 fig = px.histogram(df, x='호선')
 st.plotly_chart(fig)
 
