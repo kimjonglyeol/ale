@@ -43,7 +43,7 @@ st.write(df)
 # plt.pie(x=x, labels=labels, autopct='%.1f%%')
 # st.pyplot(fig5)
 
-sidebar.tab1, sidebar.tab2, sidebar.tab3, sidebar.tab4, sidebar.tab5 = st.tabs(['호선별 이용자수','5시30분 이용자수','6시30분 이용자수','7시30분 이용자수','8시30분 이용자수'])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(['호선별 이용자수','5시30분 이용자수','6시30분 이용자수','7시30분 이용자수','8시30분 이용자수'])
 fig = px.histogram(df, x='호선')
 tab1.plotly_chart(fig)
 
