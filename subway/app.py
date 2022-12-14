@@ -43,7 +43,7 @@ st.plotly_chart(fig)
 
 df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
-df.replace(np.NaN, 0)
+df.replace(np.Na, 0)
 fp
 
 
