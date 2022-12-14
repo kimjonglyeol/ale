@@ -12,7 +12,7 @@ st.write(
 df = pd.read_csv('./subway/subway.csv', encoding='CP949')
 st.write(df)
 
-df2 = pd.read_csv('./subway/subway_part.csv', encoding='CP949')
+df2 = pd.read_csv('./subway/subway_part.csv')
 st.write(df2)
 
 fig = plt.figure(figsize=(10,4))
