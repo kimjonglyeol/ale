@@ -43,7 +43,7 @@ st.plotly_chart(fig)
 
 df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
-df = df.fillna(0)
-fp
+zp = fp.fillna(0)
+zp
 
 
