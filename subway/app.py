@@ -44,7 +44,6 @@ st.write(df)
 # st.pyplot(fig5)
 
 tab1, tab2 = st.tabs(['호선별 이용자수','5시30분 이용자수'])
-columns = tab1[0]
 fig = px.histogram(df, x='호선')
 tab1.plotly_chart(fig)
 
@@ -52,7 +51,7 @@ df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='su
 fp = df.pivot_table(index='호선', columns='구분', values='5시30분', aggfunc='sum')
 zp = fp.fillna(0)
 # zp
-columns2 = tab2[1]
+
 # df7 = px.data.df()
 fig7 = px.density_heatmap(df, x='호선', y="5시30분", marginal_x="rug", marginal_y="histogram")
 tab2.plotly_chart(fig7)
