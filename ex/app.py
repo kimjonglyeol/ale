@@ -27,7 +27,7 @@ st.write(df) # 자동으로 표 그려줌
 # st.table(df) # 이걸로 그려도 됨
 
 st.write("# 모델 통해 예측해 보기")
-
+from sklearn.externals import joblib
 with st.echo(code_location="below"):
     import joblib
     model_path = f"{os.path.dirname(os.path.abspath(__file__))}/model.pkl"
